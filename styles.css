@@ -576,7 +576,7 @@ aside article:last-child {
 
 @media (max-width: 1200px) {
   header {
-    grid-template-rows: 30px 130px 80px;
+    grid-template-rows: 80px 130px 80px;
   }
   .main-header {
     padding-bottom: 2rem;
@@ -592,6 +592,7 @@ aside article:last-child {
     align-items: center;
     padding-right: 0;
     width: 80%;
+    margin-top: 1.1rem;
   }
 
   .logo a {
@@ -609,7 +610,7 @@ aside article:last-child {
   .main-p-section {
     width: 100%;
     text-align: center;
-    padding-block: 2rem;
+    padding-block: 1rem;
     display: flex;
     gap: 1rem;
     justify-content: center;
