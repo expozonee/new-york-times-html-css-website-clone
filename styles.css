@@ -401,6 +401,30 @@ aside article:last-child {
   position: absolute;
   bottom: 15px;
   right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.2rem;
+}
+
+.next-buttons button {
+  all: unset;
+  display: block;
+  height: 26px;
+  width: 26px;
+  cursor: pointer;
+}
+
+.next-buttons svg {
+  transition: fill 0.2s;
+}
+
+.next-buttons button:disabled {
+  cursor: auto;
+}
+
+.next-buttons button:hover:not(:disabled) svg {
+  fill: #dfdfdf;
 }
 
 .next-buttons svg {
@@ -409,12 +433,16 @@ aside article:last-child {
   fill: var(--color-background-primary, #ffffff);
 }
 
-.next-buttons svg:nth-of-type(1) {
+.next-buttons button:nth-of-type(1) {
   transform: rotate(180deg);
 }
 
 .next-buttons svg path {
   stroke: var(--color-stroke-primary, #121212);
+}
+
+.next-buttons button:disabled path {
+  stroke: #dfdfdf;
 }
 
 .opinions {
